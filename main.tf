@@ -1,6 +1,6 @@
 resource "aws_instance" "tf_test_instance" {
   ami = "ami-020cba7c55df1f615"
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1a"
   instance_type = "t2.micro"
   tags = {
     Name = "Terraform"
@@ -9,7 +9,7 @@ resource "aws_instance" "tf_test_instance" {
 }
 
 resource "aws_ebs_volume" "ebs_test" {
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1a"
   size              = 20
 
   tags = {

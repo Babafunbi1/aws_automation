@@ -36,9 +36,7 @@ resource "aws_s3_bucket_policy" "public_read" {
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.test_bucket.id
   key          = "index.html"
-  source       = "/babafunbiolowoyo/desktop/index.html"
+  source       = "${path.module}/website/index.html"
   content_type = "text/html"
 }
-
-
 
