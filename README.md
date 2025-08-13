@@ -41,8 +41,8 @@ This Terraform project creates the following AWS resources:
 
 ### 3. EC2 Instance
 
-- Created inside the VPC using one of the created subnets.
-- Uses the default security group or a custom security group that allows necessary inbound/outbound traffic.
+- Created using its default vpc available in region.
+- Uses the default security group.
 
 ---
 
