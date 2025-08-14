@@ -24,4 +24,3 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu" {
     InstanceId = aws_instance.tf_test_instance.id 
   }
 }
-
